@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="<%= description %>" />
+<title><%= title %></title>
+<link rel="icon" type="image/png" href="/assets/headerlogo.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Nunito:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/css/main.css" />
+</head>
+<body>
+<!-- ═══════════════════════ NAV ═══════════════════════ -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <!-- ASSET: swap /assets/logo-light.png → your actual logo file -->
+      <img src="/assets/logo-light.png" alt="Hrytos" onerror="this.style.display='none'" />
+      <span class="nav-logo-text">Hrytos</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#processes">Processes</a></li>
+      <li><a href="#industries">Industries</a></li>
+      <li><a href="#position">Approach</a></li>
+      <li><a href="#intel">Insights</a></li>
+    </ul>
+    <div class="nav-ctas">
+      <a href="https://automatisor.hrytos.com" class="btn-nav-outline">I'm a warehouse operator</a>
+      <a href="https://pipegen-assistant.hrytos.com" class="btn-nav-filled">I'm a solution provider</a>
+    </div>
+    <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#processes">Processes</a>
+    <a href="#industries">Industries</a>
+    <a href="#position">Intelligence</a>
+    <!-- <a href="#intel">Insights</a> -->
+    <a href="#about">About</a>
+    <div class="mobile-menu-ctas">
+      <a href="https://automatisor.hrytos.com" class="btn-nav-outline" style="text-align:center;display:block;padding:12px 0;border-radius:100px;border:1px solid rgba(255,200,87,0.5);">I'm a warehouse operator</a>
+      <a href="https://pipegen-assistant.hrytos.com" class="btn-nav-filled" style="text-align:center;display:block;padding:12px 0;border-radius:100px;">I'm a solution provider</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════ HERO ═══════════════════════ -->
+<section id="hero">
+  <div class="hero-wrapper">
+
+    <!-- Desktop mask + video -->
+    <div class="hero-mask-desktop">
+      <!-- ASSET: swap /assets/herobgvideo.mp4 → your video file path -->
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="/assets/herobgvideo.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+    </div>
+
+    <!-- Mobile mask + video -->
+    <div class="hero-mask-mobile">
+      <!-- ASSET: same video — already referenced above, no change needed -->
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="/assets/herobgvideo.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="hero-content">
+      <div class="hero-badge">
+        <div class="hero-badge-dot"></div>
+        <span>Decision Intelligence for Industrial Automation</span>
+        <div class="hero-badge-dot"></div>
+      </div>
+
+      <h1 class="hero-h1">
+        <span class="block">The autonomous robots move the goods.</span>
+        <span class="line-amber">We map where it moves the needle.</span>
+      </h1>
+
+      <p class="hero-sub">
+        Hrytos is the decision intelligence layer for autonomous material handling.
+        Diagnostics & discovery for operators who need clarity,
+        pipeline for solution providers who need fit.
+      </p>
+
+      <div class="hero-path-cards">
+        <a href="https://automatisor.hrytos.com" class="hero-path-card">
+          <span class="hero-path-tag">Warehouse operators</span>
+          <div class="hero-path-title">AutomatiSOR</div>
+          <div class="hero-path-desc">Find out what your facility actually needs — neutral assessment, technology map, matched vendors.</div>
+          <div class="hero-path-link">
+            Take the diagnostic
+            <svg viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="#FFC857" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </a>
+        <a href="https://pipegen-assistant.hrytos.com" class="hero-path-card">
+          <span class="hero-path-tag">Solution providers</span>
+          <div class="hero-path-title">PipeGen Assistant</div>
+          <div class="hero-path-desc">Convert industrial decision signals into sales-ready automation opportunities — without the noise.</div>
+          <div class="hero-path-link">
+            Explore PipeGen Assistant
+            <svg viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="#FFC857" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════ PROCESSES ═══════════════════════ -->
+<section id="processes">
+  <div class="container">
+    <div class="processes-header">
+      <div class="section-eyebrow">Processes</div>
+      <h2 class="section-h2">Where autonomous robots <span class="amber-text">really</span><br/> change the game</h2>
+      <p class="section-lead">Industrial processes where autonomous material handling creates — or destroys operational value. Each process mapped with site specific realities, not vendor claims.</p>
+    </div>
+
+    <div class="processes-grid">
+
+      <!-- Card 1 -->
+      <div class="process-card">
+        <div class="process-icon">
+          <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 17V8l8-5 8 5v9" stroke="#FFC857" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8 17v-5h6v5" stroke="#FFC857" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="process-name">Inbound receiving &amp; putaway</div>
+        <div class="process-insight">The first 90 minutes after a truck docks determines throughput for the next six hours. Tugger routing at this stage cuts putaway cycle time by 35–45% in documented deployments.</div>
+        <div class="process-footer">
+          <span class="process-tag">Warehousing · 3PL</span>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="process-card">
+        <div class="process-icon">
+          <svg viewBox="0 0 22 22" fill="none">
+            <path d="M3 15l6-6 4 4 6-8" stroke="#FFC857" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M3 19h16" stroke="#FFC857" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="process-name">Outbound staging</div>
+        <div class="process-insight">Dock congestion at shift change costs 40 minutes per lane per day in the average mid-size DC. Autonomous staging moves that loss upstream, where it's invisible and manageable.</div>
+        <div class="process-footer">
+          <span class="process-tag">DC · Fulfilment · 3PL</span>
+        </div>
+      </div>
+
+        <!-- Card 8 -->
+      <div class="process-card">
+        <div class="process-icon">
+          <svg viewBox="0 0 22 22" fill="none">
+            <path d="M3 6h16M3 11h16M3 16h10" stroke="#FFC857" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M16 14l3 3-3 3" stroke="#FFC857" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="process-name">Cross-docking &amp; flow-through</div>
+        <div class="process-insight">Cross-dock throughput is a timing problem disguised as a space problem. Autonomous transport between inbound and outbound lanes compresses dwell time from hours to minutes.</div>
+        <div class="process-footer">
+          <span class="process-tag">Retail · Distribution · 3PL</span>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="process-card">
+        <div class="process-icon">
+          <svg viewBox="0 0 22 22" fill="none">
+            <rect x="2" y="6" width="18" height="10" rx="2" stroke="#FFC857" stroke-width="1.5"/>
+            <path d="M7 6V4M15 6V4M2 10h18" stroke="#FFC857" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="process-name">Line-side replenishment</div>
+        <div class="process-insight">The bottleneck that shuts down the production line before the warehouse notices. Automated replenishment loops eliminate the 8-minute lag between line depletion and material arrival.</div>
+        <div class="process-footer">
+          <span class="process-tag">Manufacturing · Automotive</span>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="process-card">
+        <div class="process-icon">
+          <svg viewBox="0 0 22 22" fill="none">
+            <rect x="3" y="3" width="7" height="7" rx="1" stroke="#FFC857" stroke-width="1.5"/>
+            <rect x="12" y="3" width="7" height="7" rx="1" stroke="#FFC857" stroke-width="1.5"/>
+            <rect x="3" y="12" width="7" height="7" rx="1" stroke="#FFC857" stroke-width="1.5"/>
+            <path d="M12 15.5h7M15.5 12v7" stroke="#FFC857" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="process-name">Kitting &amp; sequencing</div>
+        <div class="process-insight">In automotive and electronics assembly, the sequence of parts arriving at the line must match the sequence of the build. One error costs more than a day of automation ROI.</div>
+        <div class="process-footer">
+          <span class="process-tag">Automotive · Electronics</span>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="process-card">
+        <div class="process-icon">
+          <svg viewBox="0 0 22 22" fill="none">
+            <rect x="2" y="8" width="18" height="6" rx="2" stroke="#FFC857" stroke-width="1.5"/>
+            <path d="M6 8V5M16 8V5M6 14v3M16 14v3" stroke="#FFC857" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="process-name">WIP transport</div>
+        <div class="process-insight">Work-in-process movement between manufacturing cells is 100% non-value-adding labour. It is also the most consistently automatable process in a brownfield plant — no layout change required.</div>
+        <div class="process-footer">
+          <span class="process-tag">Manufacturing · Assembly</span>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="process-card">
+        <div class="process-icon">
+          <svg viewBox="0 0 22 22" fill="none">
+            <circle cx="5" cy="11" r="3" stroke="#FFC857" stroke-width="1.5"/>
+            <circle cx="17" cy="11" r="3" stroke="#FFC857" stroke-width="1.5"/>
+            <path d="M8 11h6" stroke="#FFC857" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M5 5V3M17 5V3" stroke="#FFC857" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="process-name">Inter-facility transport</div>
+        <div class="process-insight">Between buildings, across campuses, floor-to-floor. Human-driven transport between facilities carries a 23% utilisation rate on average. Autonomous loops run at 78%.</div>
+        <div class="process-footer">
+          <span class="process-tag">All verticals</span>
+        </div>
+      </div>
+
+      
+
+      <!-- Card 6 -->
+      <div class="process-card">
+        <div class="process-icon">
+          <svg viewBox="0 0 22 22" fill="none">
+            <path d="M11 3v4M11 15v4M3 11h4M15 11h4" stroke="#FFC857" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="11" cy="11" r="4" stroke="#FFC857" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="process-name">Cold storage movement</div>
+        <div class="process-insight">Human exposure time in environments below 0°C is the binding safety constraint. Autonomous tuggers eliminate the ceiling on throughput that cold chain operators have accepted as fixed.</div>
+        <div class="process-footer">
+          <span class="process-tag">Food &amp; Bev · Pharma</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ INDUSTRIES ═══════════════════════ -->
+<section id="industries">
+  <div class="container">
+    <div class="industries-inner">
+      <div>
+        <div class="section-eyebrow">Industries</div>
+        <h2 class="section-h2">Where these processes concentrate</h2>
+        <p class="section-lead">Key industries where economics of autonomous material handling are most acute and operator decision complexity is highest.</p>
+      </div>
+      <div class="industries-strip">
+        <div class="industry-tile">
+          <div class="industry-name">Warehousing &amp; 3PL</div>
+          <div class="industry-desc">Labour cost and throughput as competing constraints</div>
+        </div>
+        <div class="industry-tile">
+          <div class="industry-name">Automotive manufacturing</div>
+          <div class="industry-desc">Sequencing precision and line-side replenishment</div>
+        </div>
+        <div class="industry-tile">
+          <div class="industry-name">Food &amp; beverage</div>
+          <div class="industry-desc">Cold chain and regulatory compliance constraints</div>
+        </div>
+        <div class="industry-tile">
+          <div class="industry-name">Pharma &amp; cold chain</div>
+          <div class="industry-desc">GMP environments and traceability requirements</div>
+        </div>
+        <div class="industry-tile">
+          <div class="industry-name">E-commerce fulfilment</div>
+          <div class="industry-desc">Peak variability and order accuracy at scale</div>
+        </div>
+        <div class="industry-tile">
+          <div class="industry-name">Retail distribution</div>
+          <div class="industry-desc">Cross-docking and store-ready unit sortation</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ NEUTRAL POSITION ═══════════════════════ -->
+<section id="position">
+  <div class="container">
+    <div class="position-inner">
+      <div>
+        <div class="section-eyebrow">How we work</div>
+        <h2 class="section-h2">Neither operator<br/>nor vendor.<br/><span class="amber-text">The connection<br/> between them.</span></h2>
+        <p class="section-lead" style="margin-bottom:0;">Hrytos does not sell automation equipment. We do not take commissions from vendors. We are funded by matched introductions — warehouse operators pay nothing, solution providers pay only when we connect them with a genuinely fit site.</p>
+        <ul class="position-points">
+          <li class="position-point">
+            <div class="point-dot"></div>
+            <div class="point-text"><strong>No vendor affiliation.</strong> Our technology assessments and benchmark data are built from operator deployments, not vendor case studies. We will tell you when a category does not fit your facility.</div>
+          </li>
+          <li class="position-point">
+            <div class="point-dot"></div>
+            <div class="point-text"><strong>Operator data, not marketing claims.</strong> Payback periods, cost-per-pick benchmarks, and implementation timelines are sourced from mid-market US facilities — not from the best-case deployments vendors choose to publish.</div>
+          </li>
+          <li class="position-point">
+            <div class="point-dot"></div>
+            <div class="point-text"><strong>You control the conversation.</strong> No vendor receives your contact details or facility profile until you explicitly confirm you want an introduction. The shortlist is yours first.</div>
+          </li>
+        </ul>
+      </div>
+      <div class="position-diagram">
+        <div class="pos-node">
+          <div class="pos-node-icon operator">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="6" width="14" height="8" rx="2" stroke="#FF9933" stroke-width="1.4"/><path d="M6 6V4a3 3 0 016 0v2" stroke="#FF9933" stroke-width="1.4" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <div class="pos-node-label">Warehouse operator</div>
+            <div class="pos-node-sub">Completes diagnostic · receives assessment</div>
+          </div>
+        </div>
+        <div class="pos-connector">
+          <div class="pos-connector-line"></div>
+          <span class="pos-connector-label">Decision intelligence</span>
+        </div>
+        <div class="pos-node" style="border-color:rgba(255,200,87,0.25);background:rgba(255,200,87,0.05);">
+          <div class="pos-node-icon hrytos">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="6" stroke="#9333ea" stroke-width="1.4"/><path d="M6 9h6M9 6v6" stroke="#9333ea" stroke-width="1.4" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <div class="pos-node-label">Hrytos</div>
+            <div class="pos-node-sub">Analyses operations · recommends best path</div>
+          </div>
+        </div>
+        <div class="pos-connector">
+          <div class="pos-connector-line" style="background:linear-gradient(180deg,rgba(204,0,102,0.5),rgba(45,65,197,0.5))"></div>
+          <span class="pos-connector-label">Matched introduction</span>
+        </div>
+        <div class="pos-node">
+          <div class="pos-node-icon vendor">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="3" y="3" width="12" height="12" rx="2" stroke="#2563eb" stroke-width="1.4"/><path d="M7 9l2 2 4-4" stroke="#2563eb" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <div class="pos-node-label">Solution provider</div>
+            <div class="pos-node-sub">Receives pre-qualified brief · pays on match</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ TWO PATHS ═══════════════════════ -->
+<section id="paths">
+  <div class="container">
+    <div class="paths-header">
+      <div class="section-eyebrow">Two platforms. One intelligence layer.</div>
+      <h2 class="section-h2">Choose your path</h2>
+    </div>
+    <div class="paths-grid">
+
+      <!-- Operator path -->
+      <div class="path-card operator">
+        <div class="path-badge">
+          <div class="path-badge-dot"></div>
+          For warehouse operators
+        </div>
+        <div class="path-title">AutomatiSOR</div>
+        <p class="path-sub">Automation Advisor for warehouse operators who need to understand what their facility is actually ready for — without a vendor shaping the answer.</p>
+        <ul class="path-features">
+          <li class="path-feature">
+            <div class="path-feature-check"><svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2 2 4-4" stroke="#FF9933" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            Assessment snapshot across 5 operational dimensions
+          </li>
+          <li class="path-feature">
+            <div class="path-feature-check"><svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2 2 4-4" stroke="#FF9933" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            Neutral technology category recommendation
+          </li>
+          <li class="path-feature">
+            <div class="path-feature-check"><svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2 2 4-4" stroke="#FF9933" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            Matched vendor shortlist — on your terms
+          </li>
+          <li class="path-feature">
+            <div class="path-feature-check"><svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2 2 4-4" stroke="#FF9933" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            Free. No obligation to engage vendors
+          </li>
+        </ul>
+        <a href="https://automatisor.hrytos.com" class="path-cta">
+          Take the diagnostic
+          <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="#0F172A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <span class="path-note">No vendor affiliation · No sales calls unless you want them</span>
+      </div>
+
+      <!-- Vendor path -->
+      <div class="path-card vendor">
+        <div class="path-badge">
+          <div class="path-badge-dot"></div>
+          For solution providers
+        </div>
+        <div class="path-title">PipeGen Assistant</div>
+        <p class="path-sub">Pipeline for automation vendors and system integrators who need fit over volume — pre-qualified operators, at the moment they're actively evaluating.</p>
+        <ul class="path-features">
+          <li class="path-feature">
+            <div class="path-feature-check"><svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2 2 4-4" stroke="#9333ea" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            Operator profiles with need and budget signal
+          </li>
+          <li class="path-feature">
+            <div class="path-feature-check"><svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2 2 4-4" stroke="#9333ea" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            Pre-matched to your technology category and facility fit
+          </li>
+          <li class="path-feature">
+            <div class="path-feature-check"><svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2 2 4-4" stroke="#9333ea" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            Structured introduction brief — no cold intros or vague leads
+          </li>
+          <li class="path-feature">
+            <div class="path-feature-check"><svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2 2 4-4" stroke="#9333ea" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            Pay per confirmed introduction — not per lead
+          </li>
+        </ul>
+        <a href="https://pipegen-assistant.hrytos.com" class="path-cta">
+          Explore PipeGen Assistant
+          <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <span class="path-note">Pre-qualified introductions only · No wasted outreach</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ LATEST INTELLIGENCE ═══════════════════════ 
+<section id="intel">
+  <div class="container">
+    <div class="intel-header">
+      <div>
+        <div class="section-eyebrow">Latest intelligence</div>
+        <h2 class="section-h2" style="margin-bottom:0;">From the research desk</h2>
+      </div>
+      <a href="https://hrytos.substack.com" class="intel-all">
+        View all articles
+        <svg viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="#FFC857" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+    <div class="intel-grid">
+      <a href="#" class="intel-card">
+        <span class="intel-tag">Line-side replenishment</span>
+        <div class="intel-title">Why the 8-minute lag is the number that shuts down automotive lines</div>
+        <div class="intel-excerpt">Most plant managers measure replenishment in hours. The ones who have automated measure it in minutes — and the 8-minute threshold is where production lines begin to stall.</div>
+        <div class="intel-meta">
+          <span>Coming soon</span>
+          <span class="intel-read">5 min read →</span>
+        </div>
+      </a>
+      <a href="#" class="intel-card">
+        <span class="intel-tag">Cold storage</span>
+        <div class="intel-title">The human exposure problem cold chain operators have accepted as fixed</div>
+        <div class="intel-excerpt">Regulatory limits on cold environment exposure time create a hard ceiling on throughput that most 3PLs treat as an operational given. It isn't.</div>
+        <div class="intel-meta">
+          <span>Coming soon</span>
+          <span class="intel-read">6 min read →</span>
+        </div>
+      </a>
+      <a href="#" class="intel-card">
+        <span class="intel-tag">Benchmarks</span>
+        <div class="intel-title">Mid-market tugger deployment data: what vendors quote vs what operators experience</div>
+        <div class="intel-excerpt">We collected deployment timelines, go-live deviations, and 12-month performance actuals from 40 mid-market US facilities. The gap is consistent and predictable.</div>
+        <div class="intel-meta">
+          <span>Coming soon</span>
+          <span class="intel-read">8 min read →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+ ═══════════════════════ LATEST INTELLIGENCE ═══════════════════════ -->
+
+<!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+<footer id="about">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand-name">
+          <!-- ASSET: swap /assets/logo-light.png → your actual logo file -->
+          <img src="/assets/logo-light.png" alt="Hrytos" onerror="this.style.display='none'" />
+          Hrytos
+        </div>
+        <div class="footer-tagline">Decision Intelligence for Industrial Automation</div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <a href="https://automatisor.hrytos.com" class="btn-nav-outline" style="font-size:12px;padding:7px 14px;">AutomatiSOR →</a>
+          <a href="https://pipegen-assistant.hrytos.com" class="btn-nav-outline" style="font-size:12px;padding:7px 14px;">PipeGen Assistant →</a>
+        </div>
+      </div>
+      <div class="footer-links-grid">
+        <div>
+          <div class="footer-col-title">By industry</div>
+          <ul class="footer-col-links">
+            <li><a href="#">Warehousing</a></li>
+            <li><a href="#">Manufacturing</a></li>
+            <li><a href="#">Fulfilment centers</a></li>
+            <li><a href="#">Distribution centers</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">By process</div>
+          <ul class="footer-col-links">
+            <li><a href="#">Inbound receiving</a></li>
+            <li><a href="#">Outbound staging</a></li>
+            <li><a href="#">Line-side replenishment</a></li>
+            <li><a href="#">Cross-docking</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Resources</div>
+          <ul class="footer-col-links">
+            <li><a href="https://hrytos.substack.com">Blog</a></li>
+            <li><a href="#">University</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Events &amp; webinars</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Company</div>
+          <ul class="footer-col-links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="https://wellfound.com/company/hrytos">Careers</a></li>
+            <li><a href="#">Newsroom</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 Hrytos, Inc. All rights reserved.</div>
+      <div class="footer-legal">
+        <a href="#">Privacy policy</a>
+        <a href="#">Terms of service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+</body>
+</html>
