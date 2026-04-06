@@ -30,7 +30,7 @@ app.set('views', path.join(__dirname, 'views'));
 
 /* ─── STATIC FILES ──────────────────────────────────────────────── */
 app.use(express.static(path.join(__dirname, 'public'), {
-  maxAge: '7d',
+  maxAge: process.env.NODE_ENV === 'production' ? '7d' : 0,
   etag:   true,
 }));
 
