@@ -1,7 +1,7 @@
 {
   "name": "hrytos-home",
   "version": "1.0.0",
-  "description": "Hrytos — Decision Intelligence for Industrial Automation",
+  "description": "Automatisor — Decision Intelligence for Intralogistics Automation",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

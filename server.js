@@ -37,8 +37,8 @@ app.use(express.static(path.join(__dirname, 'public'), {
 /* ─── ROUTES ────────────────────────────────────────────────────── */
 app.get('/', (req, res) => {
   res.render('index', {
-    title: 'Hrytos — Decision Intelligence for Industrial Automation',
-    description: 'Hrytos is the intelligence layer for autonomous material handling — diagnostic tools for operators, pipeline intelligence for solution providers.',
+    title: 'Automatisor — Decision Intelligence for Intralogistics Automation',
+    description: 'Automatisor detect operational signals, assess inefficiencies & identify highest-impact automation opportunities. — diagnostic tools for operators, pipeline intelligence for solution providers.',
   });
 });
 
