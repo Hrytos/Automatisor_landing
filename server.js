@@ -13,12 +13,13 @@ app.use(helmet({
   contentSecurityPolicy: {
     directives: {
       defaultSrc:  ["'self'"],
-      scriptSrc:   ["'self'", "'unsafe-inline'"],
+      scriptSrc:   ["'self'", "'unsafe-inline'", 'https://static.hsappstatic.net'],
       styleSrc:    ["'self'", "'unsafe-inline'", 'https://fonts.googleapis.com'],
       fontSrc:     ["'self'", 'https://fonts.gstatic.com'],
-      imgSrc:      ["'self'", 'data:'],
+      imgSrc:      ["'self'", 'data:', 'https://*.hubspot.com', 'https://*.hubspotusercontent.com'],
       mediaSrc:    ["'self'"],
-      connectSrc:  ["'self'"],
+      connectSrc:  ["'self'", 'https://*.hubspot.com', 'https://*.hubapi.com'],
+      frameSrc:    ["'self'", 'https://meetings-na2.hubspot.com'],
     },
   },
 }));
@@ -39,6 +40,13 @@ app.get('/', (req, res) => {
   res.render('index', {
     title: 'Automatisor — Decision Intelligence for Intralogistics Automation',
     description: 'Automatisor detect operational signals, assess inefficiencies & identify highest-impact automation opportunities. — diagnostic tools for operators, pipeline intelligence for solution providers.',
+  });
+});
+
+app.get('/schedule', (req, res) => {
+  res.render('schedule', {
+    title: 'Schedule your Assessment — Automatisor',
+    description: 'Book a free facility assessment with Automatisor\'s Industrial Engineering team. Get your right-fit automation path, business case, and vetted vendor shortlist.',
   });
 });
 
